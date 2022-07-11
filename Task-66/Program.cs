@@ -12,10 +12,10 @@ int m = Convert.ToInt32(ReadLine());
 Write("Введите N: ");
 int n = Convert.ToInt32(ReadLine());
 
-WriteLine($"{MultiplicatNaturalNumbers(m, n)}");
+WriteLine($"{SummNaturalNumbers(m, n)}");
 
-int MultiplicatNaturalNumbers(int numberOne, int numberTwo)
+int SummNaturalNumbers(int numberOne, int numberTwo)
 {
-   if (numberTwo > numberOne) return numberOne + MultiplicatNaturalNumbers(numberOne + 1, numberTwo);
+   if (numberTwo > numberOne) return numberOne + SummNaturalNumbers(numberOne + 1, numberTwo);
    return numberOne;
 }
